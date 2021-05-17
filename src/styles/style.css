@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  position: relative;
+  color: #fff;
+}
+
+:root {
+  --theme: #19240a;
+}
+
+body {
+  background-color: var(--theme);
+}
+
+h1, h2, h3 {
+  font-size: .8rem;
+  font-weight: normal;
+  margin: 1rem auto;
+  text-align: center;
+  width: 70%;
+}
+h1 {
+  font-size: 1rem !important;
+}
+p {
+  font-size: .8rem;
+  font-weight: normal;
+  margin: .75rem auto;
+  text-align: left;
+  
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  width: 70%;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.content {
+  margin: 0 auto;
+
+  font-weight: normal;
+  text-align: center;
+}
+
+.some-informations {
+  padding: .5rem 0 .5rem;
+}
+
+.some-informations p {
+  text-align: center;
+  margin-top: .25rem;
+}
+
+
+#road-map h1, #form h1 {
+  padding-top: 1rem;
+}
+#road-map .some-informations img {
+  margin-top: 48px;
+  padding: 8px;
+  border-radius: 500px;
+  border: 2px solid #87a255;
+}
+#road-map .some-informations h3 {
+  margin-bottom: .75rem;
+}
+
+#form form {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+#form form input[type="text"],
+#form form input[type="email"] {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin: 8px 0;
+  color: var(--theme);
+}
+#form form input[type="text"]:focus::placeholder,
+#form form input[type="email"]:focus::placeholder {
+  color: #fff;
+}
+#form form input[type="text"]::placeholder,
+#form form input[type="email"]::placeholder {
+  color: #aaa;
+  transition: color .2s;
+}
+#form form input[type="submit"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  border-radius: 32px;
+  border: 2px solid #87a255;
+  outline: none;
+  background: transparent;
+  transition: background .2s;
+  cursor: pointer;
+}
+#form form input[type="submit"]:hover {
+  background: #87a255;
+}
+
+#form form input[type="checkbox"], #form form label {
+  cursor: pointer;
+  position: relative;
+  margin: 8px 8px 12px 4px;
+}
+#form form input[type="checkbox"]::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #70F;
+  border-radius: 2rem;
+  border: calc(1.25rem / 2) solid #fff;
+  box-sizing: border-box;
+  transition: all .15s;
+}
+#form form input[type="checkbox"]:checked::before {
+  background: #87a255;
+  border: 3px solid #fff;
+}
+#form img {
+  margin-top: 48px;
+}
+#form .social-medias {
+  padding-top: 16px;
+}
+
+
+/* === ITEMS === */
+.icon-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background-image: url("../images/lulacoin-icon.png");
+  background-repeat: no-repeat;
+  background-size: min(100%, 500px);
+  background-position-x: center;
+
+  opacity: 5%;
+}
+
+.icon {
+  display: block;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+.icon-text {
+  text-align: center;
+  padding-top: 4px;
+  color: #87a255;
+}
+
+
+.logo {
+  width: 100%;
+  padding-top: 32px;
+}
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.buy-token {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 150px;
+  height: 36px;
+
+  border: 2px solid #fff;
+  border-radius: 8px;
+
+  margin: 1.25rem auto;
+
+  font-size: .75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  transition: all .2s;
+}
+.buy-token:hover {
+  background-color: #fff;
+  color: var(--theme);
+}
+
+
+.social-medias {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+  margin: 20px 0;
+}
+.social-medias a {
+  display: inline-block;
+  margin: 0 3px;
+  position: relative;
+}
+.social-medias a img {
+  display: block;
+  margin-top: 0 !important;
+  filter: invert(.2);
+}
+.social-medias a:hover img {
+  transition: filter .2s;
+  filter: invert(1);
+}
+
+.center-text {
+  text-align: center;
+}
