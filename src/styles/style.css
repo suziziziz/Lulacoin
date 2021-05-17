@@ -11,6 +11,14 @@
   --theme: #19240a;
 }
 
+#google_translate_element {
+  position: absolute;
+  z-index: 1;
+}
+#google_translate_element select, #google_translate_element select option {
+  color: #000;
+}
+
 body {
   background-color: var(--theme);
 }

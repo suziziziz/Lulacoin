@@ -1,7 +1,7 @@
 const hrefs = {
   buyToken: '/buy',
-  instagram: '/insta',
-  facebook: '/face',
+  instagram: 'https://www.instagram.com/lulacoinbrasil/',
+  facebook: 'https://www.facebook.com/lulacoinbrasil/',
   twitter: '/tt',
 }
 
